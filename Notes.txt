@@ -1,0 +1,14 @@
+# useRef Hook
+- Suppose there is a input box and i want to know what is written inside it, so for that i would need a reference to that input field and that reference is created using useRef that is provided by react.
+
+        const email = useRef(null);
+            -> Here, null => initial value
+
+- Now, to get reference of the email input field in above email variable, we have to add an attribute to the input field.
+  That attribute is "ref".
+
+        <input ref={email} />
+            -> Here, we are making "email" variable as the reference to this input box.
+
+- reference is an object that contains "current" field and this current field contains the "value" field inside the input box.
+
